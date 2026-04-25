@@ -1,4 +1,4 @@
-import '/paracharts.js';
+import './paracharts.js';
 
 const chart = document.getElementById('chart');
 const addBtn = document.getElementById('add-btn');
@@ -39,7 +39,7 @@ function initFromManifest() {
 
 const MODES = {
   single: {
-    manifest: '/src/demo/live_feed/line-single-manifest.json',
+    manifest: './line-single-manifest.json',
     MIN: 35, MAX: 65, STEP: 0.15,
     SERIES: ['Number of users in millions'],
     BIAS: [0],
@@ -51,7 +51,7 @@ const MODES = {
     }
   },
   multi: {
-    manifest: '/src/demo/live_feed/line-multi-manifest.json',
+    manifest: './line-multi-manifest.json',
     MIN: 2, MAX: 8, STEP: 0.08,
     SERIES: ['Expenses', 'Revenue'],
     BIAS: [-0.02, 0.02],
